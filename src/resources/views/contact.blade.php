@@ -25,20 +25,20 @@
         @csrf
         <div class="form-group">
             <label for="name">Your name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="John Doe">
+            <input type="text" class="form-control" name="name" id="name" placeholder="John Doe" value="{{old('name')}}" required>
         </div>
         <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" value="{{old('email')}}" required>
         </div>
         <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject Here">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject Here" value="{{old('subject')}}" required>
         </div>
 
         <div class="form-group">
             <label for="message">Enter Your Message</label>
-            <textarea class="form-control"name="message" id="message" rows="3"></textarea>
+            <textarea class="form-control"name="message" id="message" rows="3">{{old('message')}}</textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
