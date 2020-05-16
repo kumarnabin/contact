@@ -1,0 +1,19 @@
+{
+    "name": "stsewa/contact",
+    "description": "Laravel packege to send mail",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nabin Kumar Singh",
+            "email": "touchnabin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+            "psr-4": {
+                "Stsewa\\Contact\\": "src/"
+            }
+        }
+}
